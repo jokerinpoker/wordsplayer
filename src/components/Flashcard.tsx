@@ -25,7 +25,7 @@ const Flashcard: React.FC = () => {
   const [wordCount, setWordCount] = useState(0);
 
   useEffect(() => {
-    fetch('/oxford3000.json')
+    fetch('./oxford3000.json')
       .then(response => response.json())
       .then(data => {
         // 过滤掉没有正确获取到释义的单词
@@ -36,7 +36,8 @@ const Flashcard: React.FC = () => {
         // 随机打乱单词顺序
         const shuffledWords = shuffleArray(validWords);
         setWords(shuffledWords);
-      });
+      })
+      .catch(error => console.error('Error loading words:', error));
   }, []);
 
   const handleFlip = () => {

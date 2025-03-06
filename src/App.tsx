@@ -1,4 +1,3 @@
-import React from 'react'
 import Flashcard from './components/Flashcard'
 import './App.css'
 
