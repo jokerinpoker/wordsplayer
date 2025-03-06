@@ -1,0 +1,157 @@
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #F7F8F8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #D5D9D9;
+}
+
+.progress-info span {
+  color: #0F1111;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.flashcard {
+  width: 400px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flashcard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.flashcard .front h1 {
+  font-size: 64px !important;
+  text-align: center;
+  margin: 0;
+  color: #0F1111;
+  font-weight: 500;
+}
+
+.back {
+  text-align: center;
+}
+
+.meaning {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0F1111;
+}
+
+.example {
+  font-size: 18px;
+  font-style: italic;
+  color: #565959;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 14px;
+  border: 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* 亚马逊风格的主要按钮 */
+button:nth-child(2) {
+  background-color: #FFD814;
+  border-color: #FCD200;
+  color: #0F1111;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, .5);
+}
+
+button:nth-child(2):hover {
+  background-color: #F7CA00;
+  border-color: #F2C200;
+}
+
+/* 次要按钮 */
+button:nth-child(1),
+button:nth-child(3),
+button:nth-child(4) {
+  background-color: #fff;
+  border-color: #D5D9D9;
+  color: #0F1111;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, .5);
+}
+
+button:nth-child(1):hover,
+button:nth-child(3):hover,
+button:nth-child(4):hover {
+  background-color: #F7FAFA;
+}
+
+.difficult-words {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background: #F7F8F8;
+  border-radius: 8px;
+  border: 1px solid #D5D9D9;
+}
+
+.difficult-words h2 {
+  color: #0F1111;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.difficult-words ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.difficult-words li {
+  padding: 6px 12px;
+  color: #0F1111;
+  background-color: #fff;
+  border: 1px solid #D5D9D9;
+  border-radius: 4px;
+  font-size: 14px;
+} 
